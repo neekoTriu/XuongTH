@@ -6,7 +6,7 @@ public class Win : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Debug.Log("Win!");
+            Debug.Log("Win!");
         }
     }
 }
