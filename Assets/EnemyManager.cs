@@ -15,6 +15,7 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
+        //cc
         targetPoint = pointB;  
     }
 
