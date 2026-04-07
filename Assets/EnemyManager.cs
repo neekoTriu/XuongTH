@@ -8,7 +8,7 @@ public class EnemyManager : MonoBehaviour
     //Hãy sửa lại dòng nãy hợp lý, mỗi thành viên sẽ thay phiên nhau dùng int hoặc float
     //Sau đó kiểm tra những phần còn thiếu khác để script có thể hoạt động bình thường
 
-    public float speed;
+    public int speed;
 
     private Transform targetPoint;
     private bool isFacingRight = true;
