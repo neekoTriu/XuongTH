@@ -7,8 +7,8 @@ public class PlayerManager : MonoBehaviour
     //Hãy sửa lại dòng nãy hợp lý, mỗi thành viên sẽ thay phiên nhau dùng int hoặc float. 
     //Sau đó kiểm tra những phần còn thiếu khác để script có thể hoạt động bình thường
     
-    // public moveSpeed;      
-    // public jumpForce;   
+    public float moveSpeed;      
+    public float jumpForce;   
 
     [Header("Player Stats")]
     public int health = 3;          
@@ -65,13 +65,13 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            // rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); 
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); 
         }
     }
 
     void FixedUpdate()
     {
-        // rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
     void Flip()
